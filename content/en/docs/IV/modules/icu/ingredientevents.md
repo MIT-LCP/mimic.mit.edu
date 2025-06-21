@@ -1,14 +1,14 @@
 ---
 date: "2022-06-12T00:00:00-04:00"
-title: "Ingredientevents"
-linktitle: "Ingredientevents"
+title: "ingredientevents"
+linktitle: "ingredientevents"
 weight: 10
 date: 2020-08-10
 description: >
   Ingredients of continuous or intermittent administrations including nutritional and water content.
 ---
 
-# The *inputevents* table
+# The *ingredientevents* table
 
 **Table source:** MetaVision ICU database.
 
