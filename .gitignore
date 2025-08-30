@@ -62,3 +62,26 @@ target/
 
 # Mac DS_Store files
 .DS_Store
+
+# Node.js
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.npm
+
+# Jekyll
+jekyll-site/_site/
+jekyll-site/.sass-cache/
+jekyll-site/.jekyll-cache/
+jekyll-site/.jekyll-metadata
+.bundle/
+vendor/
+
+# Ruby
+*.gem
+.bundle
+Gemfile.lock
+
+# Build artifacts
+.hugo_build.lock
