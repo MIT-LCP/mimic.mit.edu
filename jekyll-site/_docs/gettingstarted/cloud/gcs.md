@@ -9,7 +9,7 @@ description: "Access the MIMIC datasets on Google Cloud Storage (GCS)."
 
 # Google Cloud Storage
 
-The MIMIC databases are hosted on Google Cloud Storage (GCS). Access to the bucket, if available, can be requested via the PhysioNet project page. See [this page for more detail on this process](/docs/gettingstarted).
+The MIMIC databases are hosted on Google Cloud Storage (GCS). Access to the bucket, if available, can be requested via the PhysioNet project page. See [this page for more detail on this process]({{ "/docs/gettingstarted" | relative_url }}).
 
 Datasets available on GCS include:
 

@@ -33,4 +33,4 @@ There are three steps to accessing data on the cloud:
 3. Log-in to the appropriate service and navigate to the resource
 
 These steps assume you are already credentialed and have signed the data use agreement for MIMIC-IV.
-If you have not, read this page for instructions on gaining access to [MIMIC](/docs/gettingstarted).
+If you have not, read this page for instructions on gaining access to [MIMIC]({{ "/docs/gettingstarted" | relative_url }}).

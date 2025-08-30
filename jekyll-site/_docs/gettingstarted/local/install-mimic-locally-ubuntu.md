@@ -9,7 +9,7 @@ description: "Step-by-step guide for installing MIMIC-III locally on Unix/Mac sy
 
 # Installing MIMIC-III in a local Postgres database
 
-Prerequisites: *This tutorial assumes that you have already completed the [steps required to gain access](/docs/gettingstarted) to the MIMIC dataset on PhysioNet.*
+Prerequisites: *This tutorial assumes that you have already completed the [steps required to gain access]({{ "/docs/gettingstarted" | relative_url }}) to the MIMIC dataset on PhysioNet.*
 
 Note that this install was written and tested using Mac OS X and Ubuntu 15.04. If you feel there are key details missing, please [raise an issue](https://github.com/MIT-LCP/mimic-website/issues) with your suggested improvements - we would love to incorporate them!
 
@@ -24,7 +24,7 @@ These steps are roughly equivalent, though you may learn more about the database
 
 Before proceeding with this tutorial you will need to:
 
-1. Download the MIMIC-III Clinical Database (see [here](/docs/gettingstarted/) for details on gaining access).
+1. Download the MIMIC-III Clinical Database (see [here]({{ "/docs/gettingstarted/" | relative_url }}) for details on gaining access).
 2. Place the MIMIC-III Clinical Database as either .csv or .csv.gz files somewhere on your local computer.
 3. Download the PostgreSQL scripts from [here](https://github.com/MIT-LCP/mimic-code/tree/main/mimic-iii/buildmimic/postgres) - only the files which end in `.sql` are required.
 
@@ -40,7 +40,7 @@ On Mac OSX with the [Homebrew package manager](http://brew.sh/), simply type ```
 
 ### 2. Download the CSV data files
 
-Assuming that you have completed the [steps required to gain access](/docs/gettingstarted) to the MIMIC dataset, you should be able to access the CSV data files on PhysioNet at: https://physionet.org/content/mimiciii/.
+Assuming that you have completed the [steps required to gain access]({{ "/docs/gettingstarted" | relative_url }}) to the MIMIC dataset, you should be able to access the CSV data files on PhysioNet at: https://physionet.org/content/mimiciii/.
 
 Download these files to a local folder and decompress them if desired (it is possible to load the data directly into a database from compressed data files). The program `gzip` can be used to decompress the data (e.g. ```gzip -d *.gz```).
 

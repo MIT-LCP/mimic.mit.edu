@@ -1,7 +1,7 @@
 # Site settings
 title: "MIMIC Database"
 description: "A large, publicly available critical care database"
-baseurl: "" # the subpath of your site, e.g. /blog
+baseurl: "/mimic-website" # the subpath of your site, e.g. /blog
 url: "https://mimic.mit.edu" # the base hostname & protocol for your site
 repository: "MIT-LCP/mimic-website"
 

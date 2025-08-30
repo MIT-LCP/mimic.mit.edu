@@ -39,4 +39,4 @@ If you are a student (including graduate students) or a postdoc, you must provid
 
 We highly recommend accessing the data through a cloud service.
 In order to use the cloud service, you must associate your PhysioNet account with your cloud account.
-The [cloud access page](./cloud) provides instructions on how to do this.
+The [cloud access page]({{ "/docs/gettingstarted/cloud" | relative_url }}) provides instructions on how to do this.

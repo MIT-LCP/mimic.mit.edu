@@ -12,8 +12,8 @@ permalink: /
 Freely available medical data for research.
 {: .fs-6 .fw-300 }
 
-[Get started](/docs/gettingstarted/){: .btn .btn-primary .fs-5 .mb-4 .mb-md-0 .mr-2 }
-[View documentation](/docs/){: .btn .fs-5 .mb-4 .mb-md-0 }
+[Get started]({{ "/docs/gettingstarted/" | relative_url }}){: .btn .btn-primary .fs-5 .mb-4 .mb-md-0 .mr-2 }
+[View documentation]({{ "/docs/" | relative_url }}){: .btn .fs-5 .mb-4 .mb-md-0 }
 
 ---
 
@@ -89,12 +89,12 @@ MIMIC-III is an older version of MIMIC. It contains an older group of patients (
 2. **Sign the data use agreement** for the datasets you need
 3. **Access the data** through cloud services or local download
 
-[Learn more about getting access →](/docs/gettingstarted/)
+[Learn more about getting access →]({{ "/docs/gettingstarted/" | relative_url }})
 
 ## Quick Links
 
-- [Documentation](/docs/)
+- [Documentation]({{ "/docs/" | relative_url }})
 - [Tutorials](/tutorials/)
 - [Concepts](/concepts/)
 - [FAQs](/faqs/)
-- [Community Guidelines](/docs/community/)
+- [Community Guidelines]({{ "/docs/community/" | relative_url }})

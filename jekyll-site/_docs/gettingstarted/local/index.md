@@ -11,7 +11,7 @@ description: "Set up MIMIC locally on your own database server."
 
 ## PhysioNet  
 
-Once your [application to access MIMIC](/docs/gettingstarted/) has been approved, you will be granted access to the 'MIMIC-III Clinical Database' project page on PhysioNet:  
+Once your [application to access MIMIC]({{ "/docs/gettingstarted/" | relative_url }}) has been approved, you will be granted access to the 'MIMIC-III Clinical Database' project page on PhysioNet:  
 https://physionet.org/content/mimiciii/
 
 ## Data and build scripts

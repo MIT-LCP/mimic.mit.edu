@@ -12,10 +12,10 @@ Welcome to the MIMIC database documentation. This comprehensive guide covers all
 
 ## Quick Navigation
 
-- **[Getting Started](/docs/gettingstarted/)** - Learn how to access MIMIC data
-- **[MIMIC-IV](/docs/iv/)** - Latest version documentation
-- **[MIMIC-III](/docs/iii/)** - Legacy version documentation  
-- **[Community](/docs/community/)** - Guidelines and support
+- **[Getting Started]({{ "/docs/gettingstarted/" | relative_url }})** - Learn how to access MIMIC data
+- **[MIMIC-IV]({{ "/docs/iv/" | relative_url }})** - Latest version documentation
+- **[MIMIC-III]({{ "/docs/iii/" | relative_url }})** - Legacy version documentation  
+- **[Community]({{ "/docs/community/" | relative_url }})** - Guidelines and support
 
 ## What's New
 
@@ -25,4 +25,4 @@ Welcome to the MIMIC database documentation. This comprehensive guide covers all
 
 ---
 
-For questions about the documentation or MIMIC data, please visit our [community guidelines](/docs/community/) or check the [FAQ section](/faqs/).
+For questions about the documentation or MIMIC data, please visit our [community guidelines]({{ "/docs/community/" | relative_url }}) or check the [FAQ section]({{ "/faqs/" | relative_url }}).

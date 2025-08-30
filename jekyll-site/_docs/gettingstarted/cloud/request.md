@@ -16,7 +16,7 @@ For MIMIC-III, go to the [MIMIC-III PhysioNet project page](https://physionet.or
 For MIMIC-IV, go to the [MIMIC-IV PhysioNet project page](https://physionet.org/content/mimiciv).
 
 Once there, scroll to the bottom to the "Files" section.
-*If* the page shows a restricted-access warning, you need to get access to [MIMIC](/docs/gettingstarted).
+*If* the page shows a restricted-access warning, you need to get access to [MIMIC]({{ "/docs/gettingstarted" | relative_url }}).
 Otherwise, you should see the following:
 
 ![Methods for accessing MIMIC-IV](/img/cloud/mimiciv_files.png)
@@ -47,7 +47,7 @@ You will receive an e-mail detailing instructions for how to access MIMIC on Big
 Once you have been granted access to a cloud resource, the next step is to navigate to that resource in the cloud.
 
 * For the GCP Storage Bucket, click the link e-mailed to you.
-* For BigQuery, see the [BigQuery page](../bigquery). You may also be interested in the [querying tutorial on BigQuery] for [MIMIC-III](/docs/iii/tutorials/intro-to-mimic-iii-bq//) or [MIMIC-IV](/docs/iv/tutorials/bigquery/).
+* For BigQuery, see the [BigQuery page](../bigquery). You may also be interested in the [querying tutorial on BigQuery] for [MIMIC-III]({{ "/docs/iii/tutorials/intro-to-mimic-iii-bq/" | relative_url }}) or [MIMIC-IV]({{ "/docs/iv/tutorials/bigquery/" | relative_url }}).
 * AWS access is currently unavailable for MIMIC-IV, but planned.
 
-Once you have access to MIMIC, we highly recommend you read the respective database introduction: [MIMIC-III](/docs/iii), [MIMIC-IV](/docs/iv/).
+Once you have access to MIMIC, we highly recommend you read the respective database introduction: [MIMIC-III]({{ "/docs/iii" | relative_url }}), [MIMIC-IV]({{ "/docs/iv/" | relative_url }}).
