@@ -3,7 +3,8 @@ name: Deploy Jekyll site to GitHub Pages
 on:
   push:
     branches: [ main, alistair/jekyll ]
-    paths: [ 'jekyll-site/**' ]
+    # Temporarily remove path filter for testing
+    # paths: [ 'jekyll-site/**' ]
   pull_request:
     branches: [ main ]
     paths: [ 'jekyll-site/**' ]
