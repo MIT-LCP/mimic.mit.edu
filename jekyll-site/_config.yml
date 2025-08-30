@@ -1,0 +1,134 @@
+# Site settings
+title: "MIMIC Database"
+description: "A large, publicly available critical care database"
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "https://mimic.mit.edu" # the base hostname & protocol for your site
+repository: "MIT-LCP/mimic-website"
+
+# Theme
+remote_theme: just-the-docs/just-the-docs
+
+# Build settings
+markdown: kramdown
+highlighter: rouge
+permalink: /:categories/:title/
+
+# Enable plugins
+plugins:
+  - jekyll-feed
+  - jekyll-sitemap
+  - jekyll-seo-tag
+  - jekyll-remote-theme
+
+# Collections
+collections:
+  docs:
+    permalink: /:collection/:path/
+    output: true
+  tutorials:
+    permalink: /:collection/:name/
+    output: true
+  concepts:
+    permalink: /:collection/:name/
+    output: true
+  faqs:
+    permalink: /:collection/:name/
+    output: true
+
+# Just the Docs theme configuration
+search_enabled: true
+search:
+  heading_level: 2
+  previews: 2
+  preview_words_before: 3
+  preview_words_after: 3
+  tokenizer_separator: /[\s/]+/
+  rel_url: true
+  button: false
+
+# Navigation structure
+nav_sort: case_insensitive # default, equivalent to nil
+nav_external_links:
+  - title: "GitHub Repository"
+    url: "https://github.com/MIT-LCP/mimic-code"
+    hide_icon: false
+  - title: "PhysioNet"
+    url: "https://physionet.org/content/mimiciv/"
+    hide_icon: false
+
+# Footer
+footer_content: "Copyright &copy; 2024 MIT Laboratory for Computational Physiology. Distributed under a <a href=\"https://creativecommons.org/licenses/by/4.0/\">Creative Commons Attribution 4.0 License.</a>"
+
+# Color scheme
+color_scheme: light
+
+# Back to top link
+back_to_top: true
+back_to_top_text: "Back to top"
+
+# Heading anchors
+heading_anchors: true
+
+# Aux links for the upper right navigation
+aux_links:
+  "MIMIC on GitHub":
+    - "//github.com/MIT-LCP/mimic-code"
+
+# Makes Aux links open in a new tab. Default is false
+aux_links_new_tab: true
+
+# Google Analytics (optional)
+# ga_tracking: UA-00000000-0
+
+# Exclude from processing
+exclude:
+  - .sass-cache/
+  - .jekyll-cache/
+  - gemfiles/
+  - Gemfile
+  - Gemfile.lock
+  - node_modules/
+  - vendor/bundle/
+  - vendor/cache/
+  - vendor/gems/
+  - vendor/ruby/
+  - README.md
+  - MIGRATION_PLAN.md
+
+# Custom defaults
+defaults:
+  - scope:
+      path: ""
+    values:
+      layout: "default"
+  - scope:
+      path: ""
+      type: "docs"
+    values:
+      layout: "default"
+      nav_order: 1000
+  - scope:
+      path: ""
+      type: "tutorials"
+    values:
+      layout: "default"
+      parent: "Tutorials"
+  - scope:
+      path: ""
+      type: "concepts"
+    values:
+      layout: "default"
+      parent: "Concepts"
+  - scope:
+      path: ""
+      type: "faqs"
+    values:
+      layout: "default"
+      parent: "FAQs"
+
+# Kramdown settings
+kramdown:
+  syntax_highlighter: rouge
+  syntax_highlighter_opts:
+    block:
+      line_numbers: false
