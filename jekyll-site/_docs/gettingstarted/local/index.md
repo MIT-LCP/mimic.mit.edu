@@ -23,11 +23,11 @@ Instructions and build scripts for MIMIC are available in the [MIMIC code reposi
 MIMIC-IV:
 https://github.com/MIT-LCP/mimic-code/tree/main/mimic-iv/buildmimic
 
-MIMIC-IV-CXR:
-To be released
+MIMIC-IV-CXR: N/A. MIMIC-IV-CXR is a set of images and text reports. Code for working with MIMIC-IV-CXR is available online:
+https://github.com/MIT-LCP/mimic-code/tree/main/mimic-iv-cxr
 
 MIMIC-IV-ED:
-To be released
+https://github.com/MIT-LCP/mimic-code/tree/main/mimic-iv-ed/buildmimic
 
 MIMIC-III:
 https://github.com/MIT-LCP/mimic-code/tree/main/mimic-iii/buildmimic
