@@ -1,0 +1,148 @@
+# MIMIC Website Navigation Structure
+# This sidebar configuration supports the Jekyll Just-the-Docs theme
+# Navigation is primarily handled through front matter nav_order and parent/child relationships
+
+# Main navigation sections
+entries:
+  - title: "Home"
+    url: "/"
+    nav_order: 1
+    
+  - title: "Documentation"
+    url: "/docs/"
+    nav_order: 2
+    has_children: true
+    sections:
+      - title: "Getting Started"
+        subsections:
+          - title: "Overview"
+            url: "/docs/gettingstarted/"
+          - title: "Cloud Access"
+            url: "/docs/gettingstarted/cloud/"
+            subsections:
+              - title: "AWS"
+                url: "/docs/gettingstarted/cloud/aws/"
+              - title: "BigQuery"
+                url: "/docs/gettingstarted/cloud/bigquery/"
+              - title: "Google Cloud Storage"
+                url: "/docs/gettingstarted/cloud/gcs/"
+              - title: "Access Request"
+                url: "/docs/gettingstarted/cloud/request/"
+          - title: "Local Installation"
+            url: "/docs/gettingstarted/local/"
+            subsections:
+              - title: "Ubuntu Installation"
+                url: "/docs/gettingstarted/local/install-mimic-locally-ubuntu/"
+              - title: "Windows Installation"
+                url: "/docs/gettingstarted/local/install-mimic-locally-windows/"
+                
+      - title: "MIMIC-IV"
+        subsections:
+          - title: "Overview"
+            url: "/docs/iv/"
+          - title: "About MIMIC-IV"
+            url: "/docs/iv/about/"
+          - title: "Concepts"
+            url: "/docs/iv/about/concepts/"
+          - title: "Modules"
+            url: "/docs/iv/modules/"
+            subsections:
+              - title: "Hospital (hosp)"
+                url: "/docs/iv/modules/hosp/"
+              - title: "ICU"
+                url: "/docs/iv/modules/icu/"
+              - title: "Emergency Department (ed)"
+                url: "/docs/iv/modules/ed/"
+              - title: "Chest X-rays (cxr)"
+                url: "/docs/iv/modules/cxr/"
+              - title: "ECG"
+                url: "/docs/iv/modules/ecg/"
+              - title: "Clinical Notes"
+                url: "/docs/iv/modules/note/"
+          - title: "Tutorials"
+            url: "/docs/iv/tutorials/"
+            subsections:
+              - title: "Chest X-ray Analysis"
+                url: "/docs/iv/tutorials/CXR/"
+              - title: "Waveform Analysis"
+                url: "/docs/iv/tutorials/Waveform/"
+                
+      - title: "MIMIC-III"
+        subsections:
+          - title: "Overview"
+            url: "/docs/iii/"
+          - title: "About MIMIC-III"
+            url: "/docs/iii/about/"
+          - title: "Identifiers"
+            url: "/docs/iii/about/identifiers/"
+          - title: "Demo Data"
+            url: "/docs/iii/demo/"
+          - title: "Tables"
+            url: "/docs/iii/tables/"
+          - title: "Tutorials"
+            url: "/docs/iii/tutorials/"
+            
+      - title: "MIMIC-II"
+        subsections:
+          - title: "Overview"
+            url: "/docs/ii/"
+          - title: "Releases"
+            url: "/docs/ii/mimic-releases/"
+            
+      - title: "About"
+        subsections:
+          - title: "Overview"
+            url: "/docs/about/"
+          - title: "Acknowledgments"
+            url: "/docs/about/acknowledgments/"
+          - title: "Glossary"
+            url: "/docs/about/glossary/"
+          - title: "Data Sources"
+            url: "/docs/about/sources/"
+            subsections:
+              - title: "CareVue"
+                url: "/docs/about/sources/carevue/"
+              - title: "MetaVision"
+                url: "/docs/about/sources/metavision/"
+                
+      - title: "Community"
+        subsections:
+          - title: "Overview"
+            url: "/docs/community/"
+          - title: "Contributing"
+            url: "/docs/community/contributing/"
+          - title: "Derived Datasets"
+            url: "/docs/community/derived/"
+          - title: "Guidelines"
+            url: "/docs/community/guidelines/"
+            
+      - title: "Help"
+        subsections:
+          - title: "Support"
+            url: "/docs/help/"
+
+  - title: "Tutorials"
+    url: "/tutorials/"
+    nav_order: 3
+    has_children: true
+    sections:
+      - title: "First Query"
+        url: "/tutorials/first-query/"
+
+  - title: "Concepts"
+    url: "/concepts/"
+    nav_order: 4
+    has_children: true
+    sections:
+      - title: "Schema Overview"
+        url: "/concepts/schema-overview/"
+
+  - title: "FAQs"
+    url: "/faqs/"
+    nav_order: 5
+    has_children: true
+    sections:
+      - title: "Access"
+        subsections:
+          - title: "How to Get Access"
+            url: "/faqs/access/how-to-get-access/"
