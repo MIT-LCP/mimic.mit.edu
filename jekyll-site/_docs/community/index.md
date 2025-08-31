@@ -1,5 +1,7 @@
 ---
 title: Community
+layout: default
+parent: "Documentation"
 nav_order: 4
 has_children: true
 permalink: /docs/community/

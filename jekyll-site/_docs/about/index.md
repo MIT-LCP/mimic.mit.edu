@@ -1,6 +1,8 @@
 ---
 title: About MIMIC
-nav_order: 2
+layout: default
+parent: "Documentation"
+nav_order: 3
 has_children: true
 permalink: /docs/about/
 ---

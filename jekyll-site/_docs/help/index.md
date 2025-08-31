@@ -1,5 +1,7 @@
 ---
 title: Help and support
+layout: default
+parent: "Documentation"
 nav_order: 1000
 permalink: /docs/help/
 ---

@@ -1,5 +1,7 @@
 ---
 title: MIMIC-III documentation
+layout: default
+parent: "Documentation"
 nav_order: 60
 has_children: true
 permalink: /docs/iii/
