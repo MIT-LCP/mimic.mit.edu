@@ -1,2 +1,0 @@
-Provider identifiers follow a consistent pattern: the letter "P", followed by either three numbers, followed by two letters or two numbers.
-For example, "P003AB", "P00102", "P1248B", etc. Provider identifiers are randomly generated and do not have any inherent meaning aside from uniquely identifying the same provider across the database.

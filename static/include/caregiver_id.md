@@ -1,1 +1,0 @@
-`caregiver_id` uniquely identifies a single caregiver who documented data in the ICU information system.
