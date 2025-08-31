@@ -73,7 +73,7 @@ For events which occur over a period of time, `starttime` and `endtime` provide 
 
 ### `dod`
 
-`dod` is the patient's date of death sourced from one of two sources: the hospital database or a state death database. See the [*patients*](/docs/iv/modules/hosp/patients) documentation for more detail.
+`dod` is the patient's date of death sourced from one of two sources: the hospital database or a state death database. See the [*patients*]({{ "/docs/iv/modules/hosp/patients" | relative_url }}) documentation for more detail.
 
 ### `transfertime`
 
