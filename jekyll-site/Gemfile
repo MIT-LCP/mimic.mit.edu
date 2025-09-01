@@ -5,7 +5,7 @@ gem "jekyll", "~> 4.3.0"
 gem "webrick", "~> 1.8"
 
 # Theme
-gem "just-the-docs", "~> 0.7.0"
+gem "just-the-docs", ">= 0.10.1"
 
 # Plugins
 group :jekyll_plugins do

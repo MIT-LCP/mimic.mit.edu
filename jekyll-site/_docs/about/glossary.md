@@ -1,5 +1,6 @@
 ---
 title: Glossary of terms
+layout: default
 parent: About MIMIC
 nav_order: 3
 ---

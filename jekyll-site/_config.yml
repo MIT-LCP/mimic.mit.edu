@@ -6,7 +6,7 @@ url: "https://mimic.mit.edu" # the base hostname & protocol for your site
 repository: "MIT-LCP/mimic-website"
 
 # Theme
-remote_theme: just-the-docs/just-the-docs
+theme: just-the-docs
 
 # Build settings
 markdown: kramdown
@@ -18,7 +18,6 @@ plugins:
   - jekyll-feed
   - jekyll-sitemap
   - jekyll-seo-tag
-  - jekyll-remote-theme
 
 # Collections
 collections:
@@ -47,6 +46,7 @@ search:
   button: false
 
 # Navigation structure
+nav_enabled: true
 nav_sort: case_insensitive # default, equivalent to nil
 nav_external_links:
   - title: "GitHub Repository"
@@ -55,6 +55,22 @@ nav_external_links:
   - title: "PhysioNet"
     url: "https://physionet.org/content/mimiciv/"
     hide_icon: false
+
+# Configure navigation for collections in Just the Docs
+just_the_docs:
+  collections:
+    docs:
+      name: "Documentation"
+      nav_order: 2
+    tutorials:
+      name: "Tutorials"
+      nav_order: 3
+    concepts:
+      name: "Concepts"
+      nav_order: 4
+    faqs:
+      name: "FAQs"
+      nav_order: 5
 
 # Footer
 footer_content: "Copyright &copy; 2025 MIT Laboratory for Computational Physiology. Distributed under a <a href=\"https://creativecommons.org/licenses/by/4.0/\">Creative Commons Attribution 4.0 License.</a>"
@@ -106,25 +122,25 @@ defaults:
       type: "docs"
     values:
       layout: "default"
-      nav_order: 1000
+      nav_exclude: false
   - scope:
       path: ""
       type: "tutorials"
     values:
       layout: "default"
-      parent: "Tutorials"
+      nav_exclude: false
   - scope:
       path: ""
       type: "concepts"
     values:
       layout: "default"
-      parent: "Concepts"
+      nav_exclude: false
   - scope:
       path: ""
       type: "faqs"
     values:
       layout: "default"
-      parent: "FAQs"
+      nav_exclude: false
 
 # Kramdown settings
 kramdown:
@@ -132,6 +148,3 @@ kramdown:
   syntax_highlighter_opts:
     block:
       line_numbers: false
-
-
-sidebar: sidebar
