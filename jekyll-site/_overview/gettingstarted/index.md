@@ -1,8 +1,7 @@
 ---
 title: "Getting Started"
 layout: default
-parent: "Documentation"
-nav_order: 1
+nav_order: 2
 has_children: true
 permalink: /docs/gettingstarted/
 description: "Instructions for getting access to MIMIC, and detail about cloud services available to work with the data."

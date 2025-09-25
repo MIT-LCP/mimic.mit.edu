@@ -41,7 +41,7 @@ Let's count how many patients are in the database:
 
 ```sql
 SELECT COUNT(*) as total_patients
-FROM `physionet-data.mimic_core.patients`;
+FROM `physionet-data.mimiciv_hosp.patients`;
 ```
 
 {: .note }
@@ -60,7 +60,7 @@ SELECT
     gender,
     COUNT(*) as count,
     ROUND(COUNT(*) * 100.0 / SUM(COUNT(*)) OVER(), 2) as percentage
-FROM `physionet-data.mimic_core.patients`
+FROM `physionet-data.mimiciv_hosp.patients`
 GROUP BY gender
 ORDER BY count DESC;
 ```
@@ -75,8 +75,8 @@ SELECT
     COUNT(DISTINCT a.hadm_id) as total_admissions,
     COUNT(DISTINCT p.subject_id) as unique_patients,
     ROUND(COUNT(DISTINCT a.hadm_id) / COUNT(DISTINCT p.subject_id), 2) as avg_admissions_per_patient
-FROM `physionet-data.mimic_core.patients` p
-JOIN `physionet-data.mimic_hosp.admissions` a 
+FROM `physionet-data.mimiciv_hosp.patients` p
+JOIN `physionet-data.mimiciv_hosp.admissions` a 
     ON p.subject_id = a.subject_id
 GROUP BY p.gender;
 ```

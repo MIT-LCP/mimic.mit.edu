@@ -21,17 +21,17 @@ plugins:
 
 # Collections
 collections:
-  docs:
+  overview:
+    permalink: /:collection/:path/
+    output: true
+  databases:
     permalink: /:collection/:path/
     output: true
   tutorials:
-    permalink: /:collection/:name/
+    permalink: /:collection/:path/
     output: true
-  concepts:
-    permalink: /:collection/:name/
-    output: true
-  faqs:
-    permalink: /:collection/:name/
+  faq:
+    permalink: /:collection/:path/
     output: true
 
 # Just the Docs theme configuration
@@ -59,21 +59,21 @@ nav_external_links:
 # Configure navigation for collections in Just the Docs
 just_the_docs:
   collections:
-    docs:
-      name: "Documentation"
+    overview:
+      name: "Overview"
+      nav_order: 1
+    databases:
+      name: "Databases"
       nav_order: 2
     tutorials:
       name: "Tutorials"
       nav_order: 3
-    concepts:
-      name: "Concepts"
+    faq:
+      name: "FAQ"
       nav_order: 4
-    faqs:
-      name: "FAQs"
-      nav_order: 5
 
 # Footer
-footer_content: "Copyright &copy; 2025 MIT Laboratory for Computational Physiology. Distributed under a <a href=\"https://creativecommons.org/licenses/by/4.0/\">Creative Commons Attribution 4.0 License.</a>"
+footer_content: "Copyright &copy; 2025 MIT Laboratory for Computational Physiology. For more accessibility options, see the <a href=\"https://accessibility.mit.edu/\">MIT Accessibility Page</a>."
 
 # Color scheme
 color_scheme: light
@@ -119,7 +119,13 @@ defaults:
       layout: "default"
   - scope:
       path: ""
-      type: "docs"
+      type: "overview"
+    values:
+      layout: "default"
+      nav_exclude: false
+  - scope:
+      path: ""
+      type: "databases"
     values:
       layout: "default"
       nav_exclude: false
@@ -131,13 +137,7 @@ defaults:
       nav_exclude: false
   - scope:
       path: ""
-      type: "concepts"
-    values:
-      layout: "default"
-      nav_exclude: false
-  - scope:
-      path: ""
-      type: "faqs"
+      type: "faq"
     values:
       layout: "default"
       nav_exclude: false

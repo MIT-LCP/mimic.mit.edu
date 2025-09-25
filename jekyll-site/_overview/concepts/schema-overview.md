@@ -3,7 +3,7 @@ title: "Schema Overview"
 layout: default
 parent: "Concepts"
 nav_order: 1
-permalink: /concepts/schema-overview/
+permalink: /docs/concepts/schema-overview/
 ---
 
 # MIMIC Schema Overview

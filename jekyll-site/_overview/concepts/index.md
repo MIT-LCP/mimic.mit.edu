@@ -1,9 +1,9 @@
 ---
 title: "Concepts"
 layout: default
-nav_order: 4
+nav_order: 2
 has_children: true
-permalink: /concepts/
+permalink: /docs/concepts/
 ---
 
 # MIMIC Concepts
@@ -14,18 +14,18 @@ Understanding the fundamental concepts behind MIMIC data organization, design pr
 
 Learn about the underlying structure:
 
-- **[Schema Overview](/concepts/schema-overview/)** - How MIMIC is organized
-- **[Data Provenance](/concepts/data-provenance/)** - Understanding data sources
-- **[Identifier Systems](/concepts/identifiers/)** - Patient, admission, and stay IDs
-- **[Temporal Organization](/concepts/time-concepts/)** - How time is handled
+- **[Schema Overview](/docs/concepts/schema-overview/)** - How MIMIC is organized
+- **[Data Provenance](/docs/concepts/data-provenance/)** - Understanding data sources
+- **[Identifier Systems](/docs/concepts/identifiers/)** - Patient, admission, and stay IDs
+- **[Temporal Organization](/docs/concepts/time-concepts/)** - How time is handled
 
 ## Data Integration Concepts
 
 Connect data across the database:
 
-- **[Cross-Module Linking](/concepts/cross-module-linking/)** - Join data from different modules
-- **[Patient Trajectories](/concepts/patient-trajectories/)** - Follow patients through care
-- **[Temporal Alignment](/concepts/temporal-alignment/)** - Synchronize different data streams
+- **[Cross-Module Linking](/docs/concepts/cross-module-linking/)** - Join data from different modules
+- **[Patient Trajectories](/docs/concepts/patient-trajectories/)** - Follow patients through care
+- **[Temporal Alignment](/docs/concepts/temporal-alignment/)** - Synchronize different data streams
 
 ## Data Quality Concepts
 
