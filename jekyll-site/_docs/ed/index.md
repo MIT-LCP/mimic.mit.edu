@@ -1,5 +1,5 @@
 ---
-title: "Emergency Department (ED)"
+title: "MIMIC-IV-ED (Emergency Department)"
 layout: default
 nav_order: 25
 has_children: true

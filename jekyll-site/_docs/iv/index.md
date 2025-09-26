@@ -22,13 +22,8 @@ MIMIC-IV is the latest version of the MIMIC Critical Care Database. It contains 
 
 MIMIC-IV is organized into modules based on the source of the data:
 
-### Core Module
-Patient demographics, admission tracking, and stay information.
-
-[Explore Modules →]({{ "/docs/iv/modules/" | relative_url }}){: .btn .btn-outline }
-
 ### Hospital (Hosp) Module  
-Data from the hospital-wide electronic health record including lab results, medications, diagnoses, and procedures.
+Data from the hospital-wide electronic health record including patient demographics, admission tracking, stay information, lab results, medications, diagnoses, and procedures.
 
 [Explore Hosp Module →]({{ "/docs/iv/modules/hosp/" | relative_url }}){: .btn .btn-outline }
 
@@ -37,24 +32,21 @@ Highly granular data from the ICU including vital signs, fluid balance, and char
 
 [Explore ICU Module →]({{ "/docs/iv/modules/icu/" | relative_url }}){: .btn .btn-outline }
 
-### Emergency Department (ED) Module
+## Link to other databases
+
+MIMIC-IV is linkable to other MIMIC datasets including MIMIC-CXR, MIMIC-IV-ED, and MIMIC-IV-Note.
+
+### Emergency Department (ED) Modu
 Emergency department data including triage, vital signs, and treatment information.
 
-[Explore ED Module →]({{ "/docs/iv/modules/ed/" | relative_url }}){: .btn .btn-outline }
+[Explore ED Module →]({{ "/docs/ed/" | relative_url }}){: .btn .btn-outline }
 
 ### Chest X-Ray (CXR) Module
 Chest X-ray images and associated radiology reports.
 
-[Explore CXR Module →]({{ "/docs/iv/modules/cxr/" | relative_url }}){: .btn .btn-outline }
+[Explore CXR Module →]({{ "/docs/cxr/" | relative_url }}){: .btn .btn-outline }
 
 ### Note Module
 De-identified clinical notes and reports.
 
-[Explore Note Module →]({{ "/docs/iv/modules/note/" | relative_url }}){: .btn .btn-outline }
-
-## Getting Started with MIMIC-IV
-
-1. **Understand the structure** - Review the [modular organization]({{ "/docs/iv/modules/" | relative_url }})
-2. **Learn about identifiers** - Understand how patients are [linked across modules]({{ "/docs/iv/about/" | relative_url }})
-3. **Try the tutorials** - Start with [MIMIC-IV tutorials]({{ "/docs/iv/tutorials/" | relative_url }})
-4. **Explore concepts** - See [core concepts]({{ "/docs/iv/about/concepts/" | relative_url }})
+[Explore Note Module →]({{ "/docs/note/" | relative_url }}){: .btn .btn-outline }

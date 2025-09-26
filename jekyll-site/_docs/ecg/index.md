@@ -8,14 +8,16 @@ has_children: true
 permalink: /docs/iv/modules/ecg/
 ---
 
+{: .note }
+> The deidentified free-text reports for ECGs have not been published yet.
+
 # ECG Module
 
 The ECG module contains electrocardiogram waveform data and measurements. This includes:
 
 - High-frequency ECG waveforms
 - Automated measurements
-- Clinical annotations
-- Study metadata
+- Related metadata (height, weight, etc).
 
 ## Tables in this Module
 

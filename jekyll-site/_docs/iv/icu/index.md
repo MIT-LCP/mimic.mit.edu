@@ -1,8 +1,7 @@
 ---
 title: "ICU Module"
 layout: default
-parent: "MIMIC-IV Modules"
-grand_parent: "MIMIC-IV"
+parent: "MIMIC-IV"
 nav_order: 1
 has_children: true
 permalink: /docs/iv/modules/icu/

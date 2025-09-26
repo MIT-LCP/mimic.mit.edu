@@ -1,8 +1,7 @@
 ---
 title: "Hospital Module"
 layout: default
-parent: "MIMIC-IV Modules"
-grand_parent: "MIMIC-IV"
+parent: "MIMIC-IV"
 nav_order: 2
 has_children: true
 permalink: /docs/iv/modules/hosp/
