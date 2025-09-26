@@ -24,7 +24,7 @@ collections:
   overview:
     permalink: /:collection/:path/
     output: true
-  databases:
+  docs:
     permalink: /:collection/:path/
     output: true
   tutorials:
@@ -62,7 +62,7 @@ just_the_docs:
     overview:
       name: "Overview"
       nav_order: 1
-    databases:
+    docs:
       name: "Databases"
       nav_order: 2
     tutorials:
@@ -125,7 +125,7 @@ defaults:
       nav_exclude: false
   - scope:
       path: ""
-      type: "databases"
+      type: "docs"
     values:
       layout: "default"
       nav_exclude: false

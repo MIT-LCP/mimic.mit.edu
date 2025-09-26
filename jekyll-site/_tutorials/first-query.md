@@ -1,8 +1,7 @@
 ---
 title: "Your First MIMIC Query"
 layout: default
-parent: "Tutorials"
-nav_order: 1
+nav_order: 31
 permalink: /tutorials/first-query/
 ---
 
