@@ -1,41 +1,55 @@
-# This action tests and builds the mimic iii website
+# This action builds and deploys the MIMIC website
 
-name: build-mimiciii-website
+name: build-mimic-website
 on:
   push:
-    branches: 
+    branches:
       - main
   pull_request:
-    branches: 
+    branches:
       - main
-    
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: "pages"
+  cancel-in-progress: false
+
 jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-    - uses: actions/checkout@v2
-      with:
-        submodules: recursive  # Fetch the Docsy theme
-        fetch-depth: 0         # Fetch all history for .GitInfo and .Lastmod
+    - uses: actions/checkout@v4
 
-    - name: Setup Hugo
-      uses: peaceiris/actions-hugo@v2
+    - name: Setup Ruby
+      uses: ruby/setup-ruby@v1
       with:
-        hugo-version: '0.74.3'
-        extended: true
+        ruby-version: '3.3'
+        bundler-cache: true
 
-    - name: Setup Node
-      uses: actions/setup-node@v2
-      with:
-        node-version: '12.x'
+    - name: Setup Pages
+      id: pages
+      uses: actions/configure-pages@v5
 
-    - name: Cache dependencies
-      uses: actions/cache@v1
-      with:
-        path: ~/.npm
-        key: ${{ runner.os }}-node-${{ hashFiles('**/package-lock.json') }}
-        restore-keys: |
-          ${{ runner.os }}-node-
+    - name: Build with Jekyll
+      run: bundle exec jekyll build --baseurl "${{ steps.pages.outputs.base_path }}"
+      env:
+        JEKYLL_ENV: production
 
-    - run: npm ci
-    - run: hugo
+    - name: Upload artifact
+      uses: actions/upload-pages-artifact@v3
+
+  deploy:
+    if: github.ref == 'refs/heads/main'
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    runs-on: ubuntu-latest
+    needs: build
+    steps:
+    - name: Deploy to GitHub Pages
+      id: deployment
+      uses: actions/deploy-pages@v4

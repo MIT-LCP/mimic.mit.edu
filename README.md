@@ -2,17 +2,20 @@
 
 ## Instructions for running the website locally
 
-1. Install Hugo. For instructions, see: https://github.com/gohugoio/hugo/releases/tag/v0.74.3
+1. Install Ruby (version 3.1 or higher) and Bundler
 2. Clone the website repository:
    ```
-   git clone --recursive https://github.com/MIT-LCP/mimic-website.git
+   git clone https://github.com/MIT-LCP/mimic-website.git
    ```
-3. Run ```hugo server``` at the command line to build the website and serve the pages;
-4. View the website at: http://127.0.0.1:1313
-
-## Note on deploying the website
-
-Automatic builds have not yet been implemented. 
+3. Install dependencies:
+   ```
+   bundle install
+   ```
+4. Run the development server:
+   ```
+   bundle exec jekyll serve
+   ```
+5. View the website at: http://127.0.0.1:4000
 
 ## Issues with the website or MIMIC
 
