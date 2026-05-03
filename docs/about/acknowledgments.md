@@ -15,16 +15,20 @@ If you use our data, code, or algorithms, please provide a citation to this proj
 
 If you use MIMIC-IV in your work, please cite this project:
 
-> Johnson, A., Bulgarelli, L., Pollard, T., Horng, S., Celi, L. A., & Mark, R. (2021). MIMIC-IV (version 1.0). PhysioNet. https://doi.org/10.13026/s6n6-xd98.
+> Johnson AE, Bulgarelli L, Shen L, Gayles A, Shammout A, Horng S, Pollard TJ, Hao S, Moody B, Gow B, Lehman LW. MIMIC-IV, a freely accessible electronic health record dataset. Scientific data. 2023 Jan 3;10(1):1.
 
 BibTeX entry:
 
 ```
-@misc{johnson2020mimic,
-  title={MIMIC-IV (version 1.0)},
-  author={Johnson, A and Bulgarelli, L and Pollard, T and Horng, S and Celi, LA and Mark, R},
-  year={2020},
-  publisher={PhysioNet}
+@article{johnson2023mimic,
+  title={MIMIC-IV, a freely accessible electronic health record dataset},
+  author={Johnson, Alistair EW and Bulgarelli, Lucas and Shen, Lu and Gayles, Alvin and Shammout, Ayad and Horng, Steven and Pollard, Tom J and Hao, Sicheng and Moody, Benjamin and Gow, Brian and others},
+  journal={Scientific data},
+  volume={10},
+  number={1},
+  pages={1},
+  year={2023},
+  publisher={Nature Publishing Group UK London}
 }
 ```
 
